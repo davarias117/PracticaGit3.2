@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             string textoTelegrama;
-            char tipoTelegrama = ' ';
+            char tipoTelegrama = 'o';
             int numPalabras = 0;
             double coste;
             //Leo el telegrama
@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 25;
+                    coste = 2.5;
                 else
                     coste = 0.5 * numPalabras;
             else
